@@ -1,4 +1,4 @@
-var mongoURL = "mongodb://localhost:27017/tester_db";
+var mongoURL = "mongodb://divya:pass@ds125906.mlab.com:25906/tester_db";
 var mongo = require("./mongo");
 
 //user signup
