@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
+	<title>Sign Up</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!--CUSTOM ANGULAR-->
+			<script type="text/javascript" src="/js/mainCtrl.js"></script>
+
+</head>
+<body ng-app="sensorApp" ng-controller="mainPageCtrl">
+<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="background-image: url(images/Capture.png);">
+
+						<h1>Sign Up as a Developer/Community Manager</h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu" style="background-image: url(images/back2.jpg);">
+										<ul>
+											<li><a href="" ng-click="index()">Home</a></li>
+											<li><a href="" ng-click="login();">Login</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+<section class="wrapper style5">
+							<div class="inner">
+									<h4>Sign Up</h4>
+
+									<form>
+
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" ng-model="firstname" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" ng-model="lastname" style="border:2px solid #757575;" />
+											</div>
+											<div class="6u 12u$(xsmall)">
+												<input type="password" name="password" id="password" value="" placeholder="Password" ng-model="password" style="border:2px solid #757575;" />
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="password" name="cpswd" id="cpswd" value="" placeholder="Confirm Password" ng-model="cpswd" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u 12u$(xsmall)">
+												<input type="email" name="email" id="email" value="" placeholder="Email" ng-model="email" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="text" name="phone" id="phone" value="" placeholder="Phone" ng-model="phone" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="address" id="address" value="" placeholder="Street Name" ng-model="address" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="text" name="state" id="state" value="" placeholder="State" ng-model="state" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="country" id="country" value="" placeholder="Country" ng-model="country" style="border:2px solid #757575;"/>
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="text" name="city" id="city" value="" placeholder="City" ng-model="city" style="border:2px solid #757575;"/>
+											</div>
+											<div class="12u$">
+												<div class="select-wrapper">
+													<select name="gender" id="gender" ng-model="gender" style="border:2px solid #757575;" >
+														<option value="male">Gender</option>
+														<option value="male">Male</option>
+														<option value="female">Female</option>
+													</select>
+												</div>
+											</div>
+											<div class="12u$">
+												<div class="select-wrapper" style="border:2px solid #757575;">
+													<select name="role" id="role" ng-model="role">
+														<option value="tester">Role</option>
+														<option value="tester">Developer</option>
+														<option value="testerManager">Community Manager</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Sign Up" class="special" style="background-image: url(images/back1.jpg);" ng-click="addUser()"/></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+
+											<div class="alert alert-success col-md-12" id="success-alert1" style="display: none ">
+											<center> <strong> Signed up successfully ! You can proceed to login now</strong></center>
+											</div>
+
+											<div class="alert alert-success col-md-12" id="failure-alert" style="display: none ">
+											<center> <strong> Email ID already exists. Please enter a correct Email. </strong></center>
+											</div>
+
+
+										</div>
+									
+									</form>
+								</div>
+
+								</section>
+								
+								</div>
+
+
+</body>
+</html>
