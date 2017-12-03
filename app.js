@@ -11,7 +11,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
-var mongoSessionConnectURL = "mongodb://<dbuser>:<dbpassword>@ds125716.mlab.com:25716/sessions";
+var mongoSessionConnectURL = "mongodb://divya:pass@ds125716.mlab.com:25716/sessions";
 var expressSession = require("express-session");
 var mongoStore = require("connect-mongo")(expressSession);  //passing parameter to expressSession module
 
