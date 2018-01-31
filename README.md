@@ -1,20 +1,3 @@
+run npm install from cmd to install node modules.
 
-
-# Sensor_Data_Integrated_V1
-
-
-
-## Usage
-
-
-
-## Developing
-
-
-
-### Tools
-
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
-
-Nodeclipse is free open-source project that grows with your contributions.
+To run the code, go to the corresponding directory and run npm start from cmd.
